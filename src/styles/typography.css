@@ -1,0 +1,67 @@
+/* Заголовки с разными жирностями */
+.h2-light {
+	@apply text-2xl font-light;
+}
+
+.h2-medium {
+	@apply text-2xl font-medium;
+}
+
+.h2-bold {
+	@apply text-2xl font-bold;
+}
+
+.h2-extrabold {
+	@apply text-2xl font-extrabold;
+}
+
+/* Параграфы */
+.p3-light {
+	@apply text-base font-light;
+}
+
+.p3-medium {
+	@apply text-base font-medium;
+}
+
+.p3-bold {
+	@apply text-base font-bold;
+}
+
+.p3-extrabold {
+	@apply text-base font-extrabold;
+}
+
+/* Подзаголовки */
+.h3-light {
+	@apply text-xl font-light;
+}
+
+.h3-medium {
+	@apply text-xl font-medium;
+}
+
+.h3-bold {
+	@apply text-xl font-bold;
+}
+
+.h3-extrabold {
+	@apply text-xl font-extrabold;
+}
+
+/* Мелкие заголовки */
+.h4-light {
+	@apply text-lg font-light;
+}
+
+.h4-medium {
+	@apply text-lg font-medium;
+}
+
+.h4-bold {
+	@apply text-lg font-bold;
+}
+
+.h4-extrabold {
+	@apply text-lg font-extrabold;
+}
