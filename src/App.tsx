@@ -1,7 +1,11 @@
+import Header from "components/Header";
+import Cope from "./assets/lamp.svg";
+
 function App() {
 	return (
 		<>
-			<div className="h2-li">Hello</div>
+			<Header />
+			<Cope className="w-15 h-15 " />
 		</>
 	);
 }

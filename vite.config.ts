@@ -1,15 +1,23 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
-  resolve:{
-    alias:{
-      'src':'/src/components',
-      'styles':'src/styles',
-      'assets':'src/assets',
-    }
-  }
-})
+	plugins: [
+		react(),
+		tailwindcss(),
+		svgr({
+			svgrOptions: { exportType: "default", icon: true },
+			include: "**/*.svg",
+		}),
+	],
+	resolve: {
+		alias: {
+			components: "/src/components",
+			styles: "src/styles",
+			assets: "src/assets",
+		},
+	},
+});
